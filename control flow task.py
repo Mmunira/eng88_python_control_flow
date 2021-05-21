@@ -11,15 +11,18 @@ film_rating = [
 
 age = input("enter your age")
 if int(age) >= 18:
-      print("you can watch all rating films")
+      print("you can watch all films")
 elif int(age) >= 15:
     print("you can watch rating films 15, 12, pg, or U")
 elif int(age) >= 12:
     print("you can watch rating films 12, pg or U")
 elif int(age) <= 12:
     print("you can watch 12 or pg rating films")
-else:
-    print("you can only watch pg or U rating films")
+elif int(age) <= "pg":
+    print("you can  watch pg or U rating films")
 
+for exit_code in age:
+    if exit_code == "exit":
+        break
 
 
